@@ -15,6 +15,7 @@ const roleFilters: Array<CharacterRole | "全部"> = [
   "同行",
   "情感",
   "传承",
+  "创作",
 ];
 
 export function CharacterExplorer({ characters }: { characters: Character[] }) {

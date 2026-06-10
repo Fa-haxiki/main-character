@@ -15,7 +15,8 @@ export type CharacterRole =
   | "师承"
   | "同行"
   | "情感"
-  | "传承";
+  | "传承"
+  | "创作";
 
 export type Character = {
   id: string;
