@@ -1,0 +1,90 @@
+import type { Source } from "./types";
+
+export const sources: Source[] = [
+  {
+    id: "nrta-screening",
+    title: "电视剧《主角》看片会在西安召开",
+    publisher: "国家广播电视总局",
+    url: "https://www.nrta.gov.cn/art/2026/5/9/art_114_73259.html",
+    tier: "A",
+    note: "用于核验首播平台、重点指导项目、出品方和核心剧情概述。",
+  },
+  {
+    id: "xinhua-premiere",
+    title: "电视剧《主角》开播 以秦腔艺术为镜折射众生百态",
+    publisher: "新华网",
+    url: "https://www.news.cn/ent/20260511/b669747f89de43fe899fae1b5d301074/c.html",
+    tier: "A",
+    note: "用于核验剧集定位、主创阵容、48 集体量和精神内核。",
+  },
+  {
+    id: "xinhua-trilogy",
+    title: "文化新观察丨荧屏内外演绎“主角”三重奏",
+    publisher: "新华网",
+    url: "https://www.news.cn/20260511/efd378957b794393ba84fc95165f4849/c.html",
+    tier: "A",
+    note: "用于核验秦腔在剧中作为情节、人物和命运隐喻的作用。",
+  },
+  {
+    id: "xinhua-qinqiang",
+    title: "从《主角》看秦腔：一嗓吼百年 戏骨照山河",
+    publisher: "新华网",
+    url: "https://app.xinhuanet.com/news/article.html?articleId=202605225d5443a593bd45a4b6e65fc3aad3f2c3",
+    tier: "A",
+    note: "用于核验《打焦赞》《狐仙劫》等剧目与人物命运的对应关系。",
+  },
+  {
+    id: "ihchina-qinqiang",
+    title: "秦腔",
+    publisher: "中国非物质文化遗产网",
+    url: "https://www.ihchina.cn/project_details/13165/",
+    tier: "A",
+    note: "用于核验秦腔的非遗批次、流行区域、板式、行当和表演特征。",
+  },
+  {
+    id: "gov-ich-list",
+    title: "国务院关于公布第一批国家级非物质文化遗产名录的通知",
+    publisher: "中国政府网",
+    url: "https://www.gov.cn/zwgk/2006-06/02/content_297946.htm",
+    tier: "A",
+    note: "用于核验秦腔入选第一批国家级非遗名录。",
+  },
+  {
+    id: "baike-main-character",
+    title: "主角（2026年李少飞执导的陕派文化剧）",
+    publisher: "百度百科",
+    url: "https://baike.baidu.com/item/%E4%B8%BB%E8%A7%92/55468282",
+    tier: "B",
+    note: "用于补充演员表、角色介绍和剧情梗概，需与 A 级来源交叉验证。",
+  },
+  {
+    id: "cnwest-launch",
+    title: "同名小说改编电视剧《主角》西安开机 张艺谋亲任监制",
+    publisher: "西部网",
+    url: "http://m.cnwest.com/sxxw/a/2025/03/04/23018009.html",
+    tier: "B",
+    note: "用于核验开机、主创阵容和角色一句话介绍。",
+  },
+  {
+    id: "netease-names",
+    title: "从易招弟到忆秦娥：电视剧《主角》究竟讲的是个啥",
+    publisher: "网易订阅",
+    url: "https://www.163.com/dy/article/KSRJLRQ90556BT20.html",
+    tier: "C",
+    note: "剧情解读来源，用于补充三重姓名和人物情感线，需标注解读属性。",
+  },
+  {
+    id: "tencent-finale",
+    title: "主角大结局：忆秦娥淡出秦腔舞台后的新接班人",
+    publisher: "腾讯新闻",
+    url: "https://news.qq.com/rain/a/20260602A02DOM00",
+    tier: "C",
+    note: "剧情解读来源，用于补充结局和宋雨传承线，需与电视剧语境区分原著差异。",
+  },
+];
+
+export const sourceTierLabels: Record<Source["tier"], string> = {
+  A: "权威来源",
+  B: "交叉核验",
+  C: "剧情解读",
+};

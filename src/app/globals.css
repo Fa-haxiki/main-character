@@ -1,26 +1,131 @@
 @import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+@font-face {
+  font-family: "LaiJiangHuLangTi";
+  src: url("/font/PingFangLaiJiangHuLangTi-2.ttf") format("truetype");
+  font-display: swap;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1a0806;
+  --foreground: #f8ecd0;
+  --paper: #f5e3bd;
+  --paper-deep: #e7c988;
+  --ink: #261310;
+  --cinnabar: #a92b1f;
+  --cinnabar-bright: #df4d31;
+  --gold: #d6aa55;
+  --old-gold: #87622b;
+  --shadow-red: #3a0f0b;
+  --smoke: rgba(248, 236, 208, 0.72);
+  --font-serif-cn: "Songti SC", "STSong", "Noto Serif CJK SC", "SimSun", serif;
+  --font-display-cn: "LaiJiangHuLangTi", "Kaiti SC", "STKaiti", "Songti SC", serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-serif-cn);
+  --font-serif: var(--font-serif-cn);
+  --font-display: var(--font-display-cn);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-serif-cn), "Songti SC", "Noto Serif CJK SC", serif;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  content: "";
+  background:
+    radial-gradient(circle at 20% 10%, rgba(223, 77, 49, 0.22), transparent 28rem),
+    radial-gradient(circle at 82% 6%, rgba(214, 170, 85, 0.18), transparent 26rem),
+    linear-gradient(135deg, #210806 0%, #110504 48%, #2d0d08 100%);
+}
+
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 236, 190, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 236, 190, 0.03) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.stage-card {
+  border: 1px solid rgba(214, 170, 85, 0.38);
+  background:
+    linear-gradient(145deg, rgba(73, 19, 12, 0.92), rgba(26, 8, 6, 0.82)),
+    radial-gradient(circle at top left, rgba(214, 170, 85, 0.16), transparent 24rem);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.paper-card {
+  color: var(--ink);
+  border: 1px solid rgba(135, 98, 43, 0.45);
+  background:
+    linear-gradient(135deg, rgba(255, 249, 229, 0.92), rgba(234, 203, 139, 0.9)),
+    radial-gradient(circle at 20% 0%, rgba(169, 43, 31, 0.1), transparent 18rem);
+  box-shadow: inset 0 0 32px rgba(135, 98, 43, 0.14);
+}
+
+.opera-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(214, 170, 85, 0.75), transparent);
+}
+
+.hero-title {
+  font-family:
+    "LaiJiangHuLangTi",
+    "Xingkai SC",
+    "STXingkai",
+    "HanziPen SC",
+    "Kaiti SC",
+    "STKaiti",
+    "Songti SC",
+    serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-shadow:
+    0 2px 0 rgba(214, 170, 85, 0.18),
+    0 14px 36px rgba(0, 0, 0, 0.42);
+}
+
+.react-flow__node {
+  font-family: var(--font-serif-cn), serif;
+}
+
+.react-flow__controls,
+.react-flow__minimap {
+  border-color: rgba(214, 170, 85, 0.28) !important;
+  background: rgba(26, 8, 6, 0.92) !important;
+}
+
+.react-flow__controls-button {
+  color: var(--foreground) !important;
+  background: rgba(26, 8, 6, 0.88) !important;
+  border-color: rgba(214, 170, 85, 0.28) !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2.5;
 }

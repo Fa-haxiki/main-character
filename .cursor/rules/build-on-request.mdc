@@ -1,0 +1,11 @@
+---
+description: Only run production builds when explicitly requested
+alwaysApply: true
+---
+
+# Build Verification
+
+- Do not run `npm run build` after every change by default.
+- Run lightweight checks such as lint/type diagnostics when useful.
+- Only run production builds when the user explicitly asks for a build, release check, deployment check, or says to verify with build.
+- If a change is risky and a build would normally be prudent, ask before running it.

@@ -1,0 +1,47 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#F0C36B" stop-opacity="0.52"/>
+      <stop offset="45%" stop-color="#A92B1F" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#160604" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="260" y1="760" x2="940" y2="1420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B83324"/>
+      <stop offset="0.52" stop-color="#6F1710"/>
+      <stop offset="1" stop-color="#220807"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F7D891"/>
+      <stop offset="1" stop-color="#8B642C"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="36" stdDeviation="34" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="#160604"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+  <path d="M0 0H210C178 177 166 344 174 500C182 657 214 811 270 962C166 900 76 832 0 756V0Z" fill="#3A0F0B" opacity="0.86"/>
+  <path d="M1200 0H990C1022 177 1034 344 1026 500C1018 657 986 811 930 962C1034 900 1124 832 1200 756V0Z" fill="#3A0F0B" opacity="0.86"/>
+  <path d="M150 135H1050" stroke="#D6AA55" stroke-opacity="0.4" stroke-width="2"/>
+  <path d="M120 1240C268 1188 428 1162 600 1162C772 1162 932 1188 1080 1240V1500H120V1240Z" fill="#090302" opacity="0.8"/>
+  <g filter="url(#softShadow)">
+    <path d="M454 418C478 327 535 270 600 270C665 270 722 327 746 418C809 447 848 513 837 587C821 699 722 764 600 764C478 764 379 699 363 587C352 513 391 447 454 418Z" fill="#F2D7B0"/>
+    <path d="M404 462C417 326 487 244 600 244C713 244 783 326 796 462C747 424 681 402 600 402C519 402 453 424 404 462Z" fill="#1B0806"/>
+    <path d="M428 372C470 251 529 185 600 185C671 185 730 251 772 372C718 330 661 309 600 309C539 309 482 330 428 372Z" fill="#C93727"/>
+    <path d="M486 265C517 184 555 136 600 136C645 136 683 184 714 265" stroke="url(#gold)" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="542" cy="525" r="10" fill="#21110E"/>
+    <circle cx="658" cy="525" r="10" fill="#21110E"/>
+    <path d="M552 610C580 632 620 632 648 610" stroke="#7D1C16" stroke-width="8" stroke-linecap="round"/>
+    <path d="M390 760C448 694 519 662 600 662C681 662 752 694 810 760C881 843 922 1057 963 1404H237C278 1057 319 843 390 760Z" fill="url(#robe)"/>
+    <path d="M600 681V1404" stroke="#D6AA55" stroke-opacity="0.55" stroke-width="8"/>
+    <path d="M320 902C418 950 511 974 600 974C689 974 782 950 880 902" stroke="url(#gold)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M302 1058C398 1103 497 1126 600 1126C703 1126 802 1103 898 1058" stroke="#F0C36B" stroke-opacity="0.5" stroke-width="9" stroke-linecap="round"/>
+    <path d="M376 768C297 830 236 910 194 1008" stroke="#D6AA55" stroke-opacity="0.7" stroke-width="24" stroke-linecap="round"/>
+    <path d="M824 768C903 830 964 910 1006 1008" stroke="#D6AA55" stroke-opacity="0.7" stroke-width="24" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.65">
+    <path d="M180 1260H1020" stroke="#D6AA55" stroke-width="2"/>
+    <path d="M240 1318H960" stroke="#D6AA55" stroke-opacity="0.42" stroke-width="2"/>
+  </g>
+  <text x="600" y="1372" text-anchor="middle" fill="#F8ECD0" font-family="Songti SC, serif" font-size="56" letter-spacing="14">忆秦娥</text>
+</svg>
